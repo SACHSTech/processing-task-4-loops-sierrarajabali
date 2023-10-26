@@ -1,4 +1,4 @@
-# Processing Task 6 - Loops
+# Processing Task 4 - Loops
 
 ## Learning Objectives
 In this task, you will learn about using loop patterns to draw sequences of objects.
