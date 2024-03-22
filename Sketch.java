@@ -25,11 +25,11 @@ public class Sketch extends PApplet {
   public void draw() {
 	  
 	// sample code, delete this stuff
-    for(int lineX = 15; lineX <= 200; lineX += 15){
+    for(int lineX = 20; lineX <= 200; lineX += 20){
       stroke(0,0,0);
       line(lineX, 0, lineX, 200);
     }
-    for(int lineY = 15; lineY <= 200; lineY += 15){
+    for(int lineY = 20; lineY <= 200; lineY += 20){
       stroke(0,0,0);
       line(0, lineY, 200, lineY);
     }
@@ -49,15 +49,27 @@ public class Sketch extends PApplet {
 
     }
 
-    fill(225, 100, 0);
-    stroke(0, 0, 0);
-    ellipse(300, 300, 20, 125);
-
-    fill(37, 108, 45);
-    stroke(37, 108, 45);
-    ellipse(300, 300, 30, 30);
+    // draw flower 
+    fill(220, 93, 52); 
+    stroke(0, 0, 0); 
+    pushMatrix(); 
+    translate(300, 300); 
+    
+    // draw petals 
+    for (int i = 0; i < 9; i++) { 
+      rotate(PI / 4); 
+      
+    // Rotate by 45 degrees for each petal 
+    
+      ellipse(0, 0, 125, 20); 
+    // Draw petal 
+    } 
+    popMatrix(); 
+    
+    // Draw middle part of the flower 
+    fill(38, 108, 45); 
+    ellipse(300, 300, 40, 40);
   
   }
-  
   // define other methods down here.
 }
